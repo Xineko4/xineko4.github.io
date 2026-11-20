@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://galihgiri.github.io/sitemap.xml
+Sitemap: https://xineko4.github.io/sitemap.xml
