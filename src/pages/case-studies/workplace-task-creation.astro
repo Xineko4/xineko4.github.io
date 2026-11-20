@@ -1,0 +1,85 @@
+---
+import CaseStudyLayout from '../../layouts/CaseStudyLayout.astro';
+---
+
+<CaseStudyLayout
+  title="Professional Workplace Task Creation for AI Benchmarking"
+  badge="Illustrative portfolio sample"
+  badgeType="sample"
+  category="AI Training & Evaluation"
+  summary="Design of an authentic workplace reasoning benchmark to evaluate an AI model's capacity to synthesize cross-functional data, manage operational tradeoffs, and produce executive deliverables."
+  confidentialityNote="This is an original illustrative portfolio sample designed to demonstrate complex benchmark engineering and task design methodology. It is entirely synthetic and is not an Outlier project, proprietary vendor document, or accepted client deliverable."
+  domains={["Prompt Writing", "Scenario Synthesis", "Task Design", "Illustrative Benchmark"]}
+>
+  <h2>Objective of High-Complexity Task Creation</h2>
+  <p>
+    Standard LLM benchmarks often rely on multiple-choice trivia or generic coding puzzles that fail to test whether an AI model can perform authentic professional workplace tasks. High-tier AI evaluation requires synthetic scenarios that reflect messy real-world dilemmas: conflicting constraints, fragmented departmental reports, budgetary limitations, and tight executive communication standards.
+  </p>
+
+  <h2>The Benchmark Scenario Design</h2>
+  <div class="my-6 p-5 rounded-xl border border-brand-border bg-white shadow-sm space-y-4">
+    <div class="border-b border-brand-border pb-3">
+      <span class="text-xs font-mono font-bold uppercase text-brand-navy">1. System Prompt & User Instructions</span>
+      <p class="text-xs text-brand-slate mt-2 mb-0 font-mono leading-relaxed bg-slate-50 p-3 rounded border border-slate-200">
+        You are the Operations Project Lead at an industrial subassembly manufacturer. Read the scenario brief and three supporting departmental memos below. Draft a formal 1-page Executive Decision Memo for the Plant General Manager proposing whether to approve an automated optical inspection (AOI) pilot on Assembly Line 4. Your memo must present: (1) Executive Recommendation, (2) Risk & Financial Tradeoff Matrix, (3) Implementation Milestone Timeline, and (4) Mitigation for Maintenance Crew Workload. Strictly limit to 350-450 words.
+      </p>
+    </div>
+
+    <div class="border-b border-brand-border pb-3">
+      <span class="text-xs font-mono font-bold uppercase text-brand-navy">2. Synthetic Supporting Materials Provided to Model</span>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-2 text-[11px] font-mono text-brand-slate">
+        <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+          <strong class="text-brand-navy block mb-1">Memo A (Quality Dept):</strong>
+          Line 4 defect escape rate has reached 4.2% (target &lt; 1.5%). Manual visual inspection misses solder bridges during night shifts.
+        </div>
+        <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+          <strong class="text-brand-navy block mb-1">Memo B (Finance Dept):</strong>
+          Pilot equipment lease is $12,500/quarter. Scrap rework costs are running $7,200/month. Budget ceiling for Q3 Capex is capped at $15,000.
+        </div>
+        <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
+          <strong class="text-brand-navy block mb-1">Memo C (Maintenance Dept):</strong>
+          Technicians are 100% booked with annual boiler audits. Cannot take on sensor calibration unless 3rd-party vendor handles initial 60 days.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Model Evaluation Rubric & Failure Modes</h2>
+  <p>
+    An effective benchmark design must include a strict, unambiguous grading key that differentiates models with superficial fluency from models with true workplace synthesis reasoning:
+  </p>
+
+  <div class="my-6 overflow-x-auto">
+    <table class="w-full text-left text-xs border-collapse border border-brand-border">
+      <thead>
+        <tr class="bg-brand-cardmuted text-brand-navy">
+          <th class="p-3 border border-brand-border font-bold">Evaluation Criteria</th>
+          <th class="p-3 border border-brand-border font-bold">Gold Standard Reference Requirement</th>
+          <th class="p-3 border border-brand-border font-bold">Common AI Model Failure Modes</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-brand-border text-brand-slate">
+        <tr>
+          <td class="p-3 border border-brand-border font-semibold text-brand-navy">Financial Reconcilation</td>
+          <td class="p-3 border border-brand-border">Model must correctly compare $12,500/quarter lease against $21,600 quarterly scrap cost ($7.2k * 3), showing net positive cash benefit within $15,000 budget cap.</td>
+          <td class="p-3 border border-brand-border text-rose-600">Model compares $12,500 quarterly directly against $7,200 monthly without converting units, wrongly declaring project over budget.</td>
+        </tr>
+        <tr>
+          <td class="p-3 border border-brand-border font-semibold text-brand-navy">Operational Constraint Resolution</td>
+          <td class="p-3 border border-brand-border">Model must address Maintenance Memo C by explicitly conditioning approval on vendor turnkey setup to avoid boiler audit disruption.</td>
+          <td class="p-3 border border-brand-border text-rose-600">Model assigns calibration to internal technicians, failing to read Memo C constraint.</td>
+        </tr>
+        <tr>
+          <td class="p-3 border border-brand-border font-semibold text-brand-navy">Format & Word Count</td>
+          <td class="p-3 border border-brand-border">Memo structure with 4 required sections, professional tone, 350-450 word count constraint strictly honored.</td>
+          <td class="p-3 border border-brand-border text-rose-600">Model generates open-ended rambling essay over 600 words or omits required tradeoff matrix.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Value of Robust Benchmark Design</h2>
+  <p>
+    Creating benchmark tasks requires deep familiarity with real operational workflows. Without authentic industrial and business background, benchmark prompts tend to be overly simplistic, and evaluation rubrics fail to catch subtle math, logic, and operational feasibility errors.
+  </p>
+</CaseStudyLayout>

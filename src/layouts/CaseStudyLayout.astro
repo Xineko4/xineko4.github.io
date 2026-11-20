@@ -1,0 +1,90 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  badge: string;
+  badgeType: 'anonymized' | 'eval' | 'sample' | 'synthetic';
+  category: string;
+  summary: string;
+  confidentialityNote: string;
+  domains: string[];
+}
+
+const { title, badge, badgeType, category, summary, confidentialityNote, domains } = Astro.props;
+
+const badgeColors = {
+  anonymized: "bg-blue-50 text-brand-accent border-blue-200",
+  eval: "bg-teal-50 text-teal-700 border-teal-200",
+  sample: "bg-amber-50 text-amber-800 border-amber-200",
+  synthetic: "bg-purple-50 text-purple-700 border-purple-200"
+};
+---
+
+<BaseLayout title={`${title} | Galih Giri`} description={summary}>
+  <div class="py-8 bg-white border-b border-brand-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <nav class="mb-4 text-xs font-mono flex items-center gap-2 text-brand-muted">
+        <a href="/" class="hover:text-brand-accent transition-colors">Home</a>
+        <span>/</span>
+        <a href="/#case-studies" class="hover:text-brand-accent transition-colors">Case Studies</a>
+        <span>/</span>
+        <span class="text-brand-slate font-medium truncate">{title}</span>
+      </nav>
+
+      <div class="flex flex-wrap items-center gap-2 mb-3">
+        <span class="text-xs uppercase font-mono tracking-wider font-semibold px-2 py-0.5 rounded bg-brand-cardmuted text-brand-slate">
+          {category}
+        </span>
+        <span class={`text-xs font-mono font-medium px-2.5 py-0.5 rounded-full border ${badgeColors[badgeType]}`}>
+          {badge}
+        </span>
+      </div>
+
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-navy tracking-tight mb-4">
+        {title}
+      </h1>
+
+      <p class="text-base sm:text-lg text-brand-slate leading-relaxed mb-6 font-normal">
+        {summary}
+      </p>
+
+      <div class="flex flex-wrap gap-2 pt-2 border-t border-brand-border">
+        {domains.map((d: string) => (
+          <span class="text-xs font-mono bg-brand-bg px-2.5 py-1 rounded border border-brand-border text-brand-slate">
+            {d}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+    <!-- Confidentiality Callout -->
+    <div class="mb-10 p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-brand-slate leading-relaxed flex items-start gap-3">
+      <svg class="w-5 h-5 text-brand-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <div>
+        <strong class="font-semibold text-brand-navy block mb-0.5">Confidentiality & Ethics Notice</strong>
+        {confidentialityNote}
+      </div>
+    </div>
+
+    <!-- Main Content Body -->
+    <article class="prose prose-slate max-w-none prose-headings:text-brand-navy prose-headings:font-bold prose-h2:text-xl sm:prose-h2:text-2xl prose-h2:border-b prose-h2:border-brand-border prose-h2:pb-2 prose-h2:mt-10 prose-h3:text-lg prose-h3:mt-6 prose-p:text-brand-slate prose-p:leading-relaxed prose-li:text-brand-slate">
+      <slot />
+    </article>
+
+    <!-- Back to Case Studies Navigation -->
+    <div class="mt-16 pt-8 border-t border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4">
+      <a href="/#case-studies" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-accent hover:text-brand-accenthover transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+        Back to All Case Studies
+      </a>
+      <a href="mailto:galihgilberto48@gmail.com" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-navy text-white text-xs font-semibold tracking-wide uppercase hover:bg-brand-deep transition-all shadow-sm">
+        Discuss This Project
+      </a>
+    </div>
+  </div>
+</BaseLayout>

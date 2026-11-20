@@ -1,0 +1,115 @@
+---
+import CaseStudyLayout from '../../layouts/CaseStudyLayout.astro';
+---
+
+<CaseStudyLayout
+  title="AI Response Evaluation & Data Quality Framework"
+  badge="Independent task experience + illustrative sample"
+  badgeType="eval"
+  category="AI Training & Evaluation"
+  summary="A detailed look at methodology and criteria used in AI response evaluation, prompt assessment, factual verification, and comparative model ranking."
+  confidentialityNote="This case study combines confirmed independent AI task experience with an original, fictional illustrative evaluation sample. No client data or proprietary internal guidelines are reproduced."
+  domains={["AI Response Evaluation", "Comparison & Ranking", "Fact Checking", "Instruction Adherence"]}
+>
+  <h2>Domain Experience & Task Scope</h2>
+  <p>
+    High-performing Large Language Models rely on meticulous human data feedback to refine reasoning, eliminate hallucinations, follow complex constraints, and maintain professional tone. As an independent AI task contributor, confirmed project-based work includes:
+  </p>
+  <ul>
+    <li><strong>AI Response Evaluation:</strong> Assessing model candidates across accuracy, relevance, completeness, and adherence to system instructions.</li>
+    <li><strong>Response Comparison & Ranking:</strong> Performing side-by-side preference grading to identify superior reasoning paths and better tone calibration.</li>
+    <li><strong>Factual Accuracy Checks:</strong> Verifying technical claims, dates, formulas, and operational assertions against trusted reference sources.</li>
+    <li><strong>Prompt Writing & Response Rewriting:</strong> Engineering challenging edge-case prompts and drafting gold-standard target responses.</li>
+    <li><strong>Data Annotation & Labeling:</strong> Categorizing error types (e.g., hallucination, constraint violation, reasoning omission, tone inconsistency).</li>
+    <li><strong>Instruction-Following Evaluation:</strong> Auditing negative constraints (e.g., word count caps, format requirements, tone limitations).</li>
+    <li><strong>Translation & Localization:</strong> Validating cultural nuances and technical terminology in English and Indonesian contexts.</li>
+  </ul>
+
+  <h2>Illustrative Evaluation Demonstration</h2>
+  <p>
+    Below is an original, synthetic evaluation scenario illustrating how structured multi-criteria rubrics are applied to assess model outputs.
+  </p>
+
+  <div class="my-6 p-4 rounded-xl bg-white border border-brand-border shadow-sm">
+    <div class="text-xs font-mono font-semibold text-brand-muted uppercase mb-1">Synthetic Prompt Scenario</div>
+    <div class="p-3 rounded bg-slate-50 border border-slate-200 text-xs text-brand-navy font-mono">
+      "Act as an industrial maintenance advisor. A junior technician noticed oil foaming in a hydraulic power unit. Provide a concise troubleshooting checklist formatted as 3 distinct diagnostic steps. You must include one critical safety precaution before touching the unit. Limit your response to 120 words total."
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
+    <div class="p-4 rounded-xl border border-brand-border bg-white">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs font-mono font-bold text-brand-navy">Model Candidate A</span>
+        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 font-semibold">Preferred Response</span>
+      </div>
+      <div class="text-xs text-brand-slate leading-relaxed bg-slate-50 p-3 rounded border border-slate-200 font-mono">
+        <strong>Safety Precaution:</strong> Lock out and tag out (LOTO) electrical power and relieve reservoir pressure completely before inspecting fittings.<br/><br/>
+        1. <strong>Inspect Fluid Level & Viscosity:</strong> Low oil allows pump suction to draw air. Verify oil level is at mid-sight glass and check for water contamination (milky emulsification).<br/>
+        2. <strong>Check Suction Line Integrity:</strong> Inspect intake hoses, clamp seals, and fittings for air leaks on the negative-pressure side.<br/>
+        3. <strong>Examine Return Line Submergence:</strong> Ensure the return pipe terminates well below minimum fluid level to prevent aeration during discharge.
+      </div>
+      <div class="text-[11px] text-brand-muted mt-2 font-mono">Word count: 98 words &bull; Follows all negative constraints.</div>
+    </div>
+
+    <div class="p-4 rounded-xl border border-brand-border bg-white">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs font-mono font-bold text-brand-navy">Model Candidate B</span>
+        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200 font-semibold">Suboptimal Response</span>
+      </div>
+      <div class="text-xs text-brand-slate leading-relaxed bg-slate-50 p-3 rounded border border-slate-200 font-mono">
+        Hydraulic foaming is usually caused by air ingress, water contamination, or improper fluid type. Here is what you should do:<br/><br/>
+        - Replace the hydraulic pump immediately as foaming always means internal mechanical failure.<br/>
+        - Open the reservoir breather while running to check airflow.<br/>
+        - Drain all hydraulic oil and refill with any standard automotive motor oil.<br/>
+        - Always remember to wear gloves and safety glasses whenever you are in an industrial plant.
+      </div>
+      <div class="text-[11px] text-brand-muted mt-2 font-mono">Word count: 72 words &bull; Factually inaccurate; safety violation.</div>
+    </div>
+  </div>
+
+  <h2>Transparent Evaluation Rubric & Justification</h2>
+  <div class="my-6 overflow-x-auto">
+    <table class="w-full text-left text-xs border-collapse border border-brand-border">
+      <thead>
+        <tr class="bg-brand-cardmuted text-brand-navy">
+          <th class="p-3 border border-brand-border font-bold">Evaluation Dimension</th>
+          <th class="p-3 border border-brand-border font-bold">Candidate A Assessment</th>
+          <th class="p-3 border border-brand-border font-bold">Candidate B Assessment</th>
+          <th class="p-3 border border-brand-border font-bold">Winner & Rationale</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-brand-border text-brand-slate">
+        <tr>
+          <td class="p-3 border border-brand-border font-semibold text-brand-navy">Factual & Domain Accuracy</td>
+          <td class="p-3 border border-brand-border">Accurate diagnosis: points to suction air ingress, fluid aeration, and water emulsion.</td>
+          <td class="p-3 border border-brand-border text-rose-600">Major hallucination: asserts foaming always means pump failure; dangerously suggests automotive motor oil.</td>
+          <td class="p-3 border border-brand-border font-semibold text-emerald-700">Candidate A (Sound engineering advice)</td>
+        </tr>
+        <tr>
+          <td class="p-3 border border-brand-border font-semibold text-brand-navy">Safety & Compliance</td>
+          <td class="p-3 border border-brand-border">Explicit LOTO and pressure relief instructions before touching equipment.</td>
+          <td class="p-3 border border-brand-border text-rose-600">Generic PPE mention; dangerously advises opening reservoir breather while machine is operating.</td>
+          <td class="p-3 border border-brand-border font-semibold text-emerald-700">Candidate A (Standard industrial safety adherence)</td>
+        </tr>
+        <tr>
+          <td class="p-3 border border-brand-border font-semibold text-brand-navy">Instruction Adherence</td>
+          <td class="p-3 border border-brand-border">Fully compliant: exactly 3 steps, safety upfront, under 120 words (98 words).</td>
+          <td class="p-3 border border-brand-border text-amber-600">Failed step constraint: bulleted general advice rather than 3 diagnostic steps.</td>
+          <td class="p-3 border border-brand-border font-semibold text-emerald-700">Candidate A (100% constraint satisfaction)</td>
+        </tr>
+        <tr>
+          <td class="p-3 border border-brand-border font-semibold text-brand-navy">Clarity & Actionability</td>
+          <td class="p-3 border border-brand-border">Structured, concise, logically ordered from simplest check to root cause.</td>
+          <td class="p-3 border border-brand-border">Disorganized, alarmist, and counterproductive for a junior technician.</td>
+          <td class="p-3 border border-brand-border font-semibold text-emerald-700">Candidate A</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Methodological Takeaways</h2>
+  <p>
+    Rigorous evaluation requires going beyond surface-level fluency. In technical domains, plausible-sounding AI responses can be catastrophically wrong or physically hazardous. Evaluators with hands-on manufacturing discipline bring critical scrutiny that prevents hallucinated procedures from entering production-grade training datasets.
+  </p>
+</CaseStudyLayout>

@@ -1,0 +1,92 @@
+{
+  "name": "Galih Galuh Giri Gilberto",
+  "display_name": "Galih Giri",
+  "location": "Indonesia",
+  "email": "galihgilberto48@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/galihgilberto/",
+  "headline": "Smart Factory Project Management | Digital Training Solutions | AI Training & Evaluation",
+  "smart_factory_experience_years": 6,
+  "project_scope": "Multiple projects across departments",
+  "responsibilities": [
+    "Project planning",
+    "Coordination",
+    "Implementation",
+    "Monitoring and evaluation",
+    "Stakeholder management",
+    "Budget and resource management"
+  ],
+  "training_solutions": [
+    "VR training",
+    "Digital work instructions",
+    "Training content development",
+    "Training needs analysis",
+    "Training effectiveness evaluation"
+  ],
+  "reported_impact": [
+    "Reduced training time",
+    "Improved accessibility"
+  ],
+  "ai_task_experience": [
+    "AI response evaluation",
+    "Response comparison and ranking",
+    "Factual accuracy checks",
+    "Prompt writing",
+    "Response rewriting",
+    "Data annotation",
+    "Data labeling",
+    "Instruction-following evaluation",
+    "Translation/localization"
+  ],
+  "experience": [
+    {
+      "title": "Smart Factory Coordinator | Industry 4.0",
+      "organization": "Panasonic Industrial Devices Batam",
+      "period": "September 2020 – Present"
+    },
+    {
+      "title": "VR Developer Intern",
+      "organization": "Panasonic Industrial Devices Batam",
+      "period": "August 2019 – August 2020"
+    },
+    {
+      "title": "Independent AI Task Contributor",
+      "organization": "Outlier AI",
+      "period": "Project-based; dates not specified"
+    }
+  ],
+  "education": {
+    "qualification": "Associate’s Degree, Information Technology",
+    "institution": "Politeknik Negeri Batam",
+    "period": "August 2017 – August 2020"
+  },
+  "languages": [
+    {
+      "name": "Indonesian",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Advanced"
+    },
+    {
+      "name": "Japanese",
+      "level": "Intermediate"
+    }
+  ],
+  "tools": [
+    "Unity",
+    "Google Gemini",
+    "Outlier AI",
+    "Digital workflow/RPA initiatives"
+  ],
+  "unverified_claims_to_avoid": [
+    "Data Scientist title",
+    "Advanced Python",
+    "SQL proficiency",
+    "Machine Learning engineering",
+    "Advanced Power BI/Tableau/Excel",
+    "PMP certification",
+    "Quantified savings or KPIs",
+    "Project count, budget, team size"
+  ]
+}

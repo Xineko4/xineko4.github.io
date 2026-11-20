@@ -1,0 +1,186 @@
+---
+import '../styles/global.css';
+import ScrollNavEnhancer from '../components/react/ScrollNavEnhancer';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const {
+  title = "Galih Giri | Smart Factory Project Management & Digital Training Solutions",
+  description = "Professional portfolio of Galih Giri. 6 years managing Smart Factory initiatives, digital training solutions (VR & digital work instructions), and project-based AI evaluation.",
+  ogImage = "/galih-mark.svg"
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://galihgiri.github.io");
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalURL} />
+  <link rel="icon" type="image/svg+xml" href="/galih-mark.svg" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={new URL(ogImage, Astro.site || "https://galihgiri.github.io")} />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content={title} />
+  <meta property="twitter:description" content={description} />
+  <meta property="twitter:image" content={new URL(ogImage, Astro.site || "https://galihgiri.github.io")} />
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-[#F8FAFC] text-[#0F1E2E] antialiased selection:bg-brand-accent selection:text-white flex flex-col min-h-screen">
+  <ScrollNavEnhancer client:load />
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-brand-navy text-white rounded font-medium shadow-lg">
+    Skip to main content
+  </a>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-[#F8FAFC]/95 backdrop-blur border-b border-brand-border">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-accent rounded p-1">
+        <img src="/galih-mark.svg" alt="Galih Giri Logo" class="w-8 h-8 rounded-lg shadow-sm" />
+        <div class="flex flex-col">
+          <span class="font-bold text-brand-navy text-base tracking-tight group-hover:text-brand-accent transition-colors">Galih Giri</span>
+          <span class="text-[11px] text-brand-muted hidden sm:inline-block -mt-1 font-mono">Batam, Indonesia &bull; Open to remote</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-brand-slate" aria-label="Main Navigation">
+        <a href="/#about" data-nav-section="about" class="hover:text-brand-accent transition-colors">About</a>
+        <a href="/#expertise" data-nav-section="expertise" class="hover:text-brand-accent transition-colors">Expertise</a>
+        <a href="/#case-studies" data-nav-section="case-studies" class="hover:text-brand-accent transition-colors">Selected Work</a>
+        <a href="/#experience" data-nav-section="experience" class="hover:text-brand-accent transition-colors">Experience</a>
+        <a href="/#contact" data-nav-section="contact" class="hover:text-brand-accent transition-colors">Contact</a>
+        <a href="mailto:galihgilberto48@gmail.com" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-brand-navy text-white text-xs font-semibold tracking-wide uppercase hover:bg-brand-deep transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-accent">
+          Get in Touch
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        type="button"
+        class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-brand-slate hover:text-brand-navy hover:bg-brand-cardmuted focus:outline-none focus:ring-2 focus:ring-brand-accent"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-brand-border bg-white px-4 pt-3 pb-5 space-y-2 shadow-lg">
+      <a href="/#about" data-nav-section="about" class="block py-2 text-base font-medium text-brand-slate hover:text-brand-accent">About</a>
+      <a href="/#expertise" data-nav-section="expertise" class="block py-2 text-base font-medium text-brand-slate hover:text-brand-accent">Expertise</a>
+      <a href="/#case-studies" data-nav-section="case-studies" class="block py-2 text-base font-medium text-brand-slate hover:text-brand-accent">Selected Work</a>
+      <a href="/#experience" data-nav-section="experience" class="block py-2 text-base font-medium text-brand-slate hover:text-brand-accent">Experience</a>
+      <a href="/#contact" data-nav-section="contact" class="block py-2 text-base font-medium text-brand-accent font-semibold">Contact</a>
+    </div>
+  </header>
+
+  <main id="main-content" class="flex-grow">
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-white border-t border-slate-800 mt-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-slate-800">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="/galih-mark.svg" alt="Galih Giri" class="w-7 h-7 rounded" />
+            <span class="font-bold text-white text-base">Galih Giri</span>
+          </div>
+          <p class="text-sm text-slate-300 max-w-md leading-relaxed">
+            Smart Factory project coordination, VR training implementation, and rigorous project-based AI evaluation. Focused on practical workplace execution and high-accuracy delivery.
+          </p>
+          <p class="text-xs text-slate-400 mt-3 font-mono">Location: Indonesia &bull; Remote Available</p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Portfolio Sections</h4>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li><a href="/#about" class="hover:text-white transition-colors">Professional Background</a></li>
+            <li><a href="/#expertise" class="hover:text-white transition-colors">Core Capabilities</a></li>
+            <li><a href="/#case-studies" class="hover:text-white transition-colors">Case Studies & Demos</a></li>
+            <li><a href="/#experience" class="hover:text-white transition-colors">Work History & Education</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Direct Connect</h4>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li>
+              <a href="mailto:galihgilberto48@gmail.com" class="hover:text-white transition-colors flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                Email Contact
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/galihgilberto/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.738-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                LinkedIn Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <div>
+          &copy; {new Date().getFullYear()} Galih Galuh Giri Gilberto. All rights reserved.
+        </div>
+        <div class="text-[11px] text-slate-400">
+          Built with Astro & Tailwind. Zero tracking cookies &bull; Static deployment.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        const isHidden = menu.classList.contains('hidden');
+        if (isHidden) {
+          menu.classList.remove('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+        } else {
+          menu.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Close mobile menu when links are clicked
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+</body>
+</html>

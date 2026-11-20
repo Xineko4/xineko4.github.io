@@ -1,0 +1,454 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { profileData, caseStudiesList } from '../data/content';
+import HeroDeliveryMap from '../components/react/HeroDeliveryMap';
+import Reveal from '../components/react/Reveal';
+import InteractiveCaseCard from '../components/react/InteractiveCaseCard';
+import MagneticCta from '../components/react/MagneticCta';
+
+const badgeColors = {
+  anonymized: "bg-blue-50 text-brand-accent border-blue-200",
+  eval: "bg-teal-50 text-teal-700 border-teal-200",
+  sample: "bg-amber-50 text-amber-800 border-amber-200",
+  synthetic: "bg-purple-50 text-purple-700 border-purple-200"
+};
+---
+
+<BaseLayout>
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 border-b border-brand-border bg-gradient-to-b from-white to-[#F8FAFC] overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none opacity-20 bg-[url('/hero-grid.svg')] bg-cover bg-center"></div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+        <div class="lg:col-span-7">
+          <!-- Credibility Tag -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-brand-accent text-xs font-mono font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+            <span>Smart Factory Project Delivery &bull; Digital Learning &bull; AI Evaluation</span>
+          </div>
+
+          <h1 class="max-w-2xl text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy tracking-tight leading-[1.08] mb-6">
+            Smart Factory Project Management &amp; Digital Training Solutions
+          </h1>
+
+          <p class="max-w-lg text-base sm:text-lg text-brand-slate leading-relaxed mb-8 font-normal">
+            {profileData.heroSummary}
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-4">
+            <MagneticCta
+              client:load
+              href="#case-studies"
+              label="View Selected Work"
+              className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-brand-navy text-white text-sm font-semibold tracking-wide hover:bg-brand-deep transition-colors shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-accent"
+            />
+            <a
+              href="mailto:galihgilberto48@gmail.com"
+              class="px-6 py-3.5 rounded-xl bg-white border border-brand-border text-brand-navy text-sm font-semibold tracking-wide hover:bg-brand-cardmuted transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-accent flex items-center gap-2"
+            >
+              <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Contact via Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/galihgilberto/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-5 py-3.5 rounded-xl bg-white border border-brand-border text-brand-slate text-sm font-semibold hover:text-brand-accent hover:border-brand-accent transition-all shadow-sm flex items-center gap-2"
+            >
+              <svg class="w-4 h-4 text-brand-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.738-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <HeroDeliveryMap client:load />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-16 md:py-24 border-b border-brand-border bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Reveal client:visible={{ rootMargin: "150px" }}>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-5">
+          <div class="text-xs font-mono font-bold uppercase tracking-wider text-brand-accent mb-2">Professional Identity</div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy tracking-tight mb-4">
+            Industrial Precision Meets Modern Digital Intelligence
+          </h2>
+          <p class="text-sm text-brand-slate leading-relaxed mb-6">
+            Galih Galuh Giri Gilberto brings together practical shopfloor discipline with digital instructional technology and systematic AI model evaluation.
+          </p>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+            <div class="text-xs font-mono font-bold uppercase text-brand-slate mb-2">Target Remote Collaboration</div>
+            <p class="text-xs text-brand-slate leading-relaxed">
+              Open to remote freelance and contract roles with AI training vendors, PMO teams, manufacturing operations, and digital learning organizations seeking grounded problem solving and high-integrity data evaluation.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-4 text-base text-brand-slate leading-relaxed font-normal">
+          {profileData.aboutText.map((p: string) => (
+            <p class="bg-[#F8FAFC] p-4 rounded-xl border border-brand-border">{p}</p>
+          ))}
+
+          <div class="pt-2">
+            <div class="text-xs font-mono font-bold uppercase tracking-wider text-brand-muted mb-2">Primary Core Responsibilities</div>
+            <div class="flex flex-wrap gap-2">
+              {profileData.responsibilities.map((r: string) => (
+                <span class="text-xs font-mono font-medium px-3 py-1.5 rounded-lg bg-slate-100 text-brand-navy border border-slate-200">
+                  &check; {r}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+        </div>
+      </Reveal>
+    </div>
+  </section>
+
+  <!-- EXPERTISE SECTION -->
+  <section id="expertise" class="py-16 md:py-24 border-b border-brand-border bg-[#F8FAFC]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Reveal client:visible={{ rootMargin: "150px" }}>
+        <div class="max-w-2xl mb-12">
+        <div class="text-xs font-mono font-bold uppercase tracking-wider text-brand-accent mb-2">Core Capabilities</div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy tracking-tight mb-4">
+          Structured Expertise & Domain Knowledge
+        </h2>
+        <p class="text-sm sm:text-base text-brand-slate">
+          Direct professional competencies grounded strictly in verified work history, project delivery, and independent AI data contributions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 1. Smart Factory PM -->
+        <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 text-brand-accent flex items-center justify-center font-bold font-mono text-sm mb-4">
+              01
+            </div>
+            <h3 class="text-base font-bold text-brand-navy mb-2">Smart Factory Project Management</h3>
+            <p class="text-xs text-brand-slate leading-relaxed mb-4">
+              Comprehensive project coordination across the manufacturing ecosystem, translating plant requirements into actionable schedules.
+            </p>
+            <ul class="text-xs text-brand-slate space-y-1.5 border-t border-brand-border pt-3">
+              <li>&bull; Project planning & scope breakdown</li>
+              <li>&bull; Cross-departmental coordination</li>
+              <li>&bull; Implementation & pilot rollout</li>
+              <li>&bull; Monitoring & progress evaluation</li>
+              <li>&bull; Stakeholder management</li>
+              <li>&bull; Budget & resource management</li>
+              <li>&bull; Technical documentation & reporting</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-3 border-t border-brand-border text-[11px] font-mono text-brand-muted">
+            Track Record: 6 Years Across Depts
+          </div>
+        </div>
+
+        <!-- 2. Digital Training Solutions -->
+        <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200 text-brand-teal flex items-center justify-center font-bold font-mono text-sm mb-4">
+              02
+            </div>
+            <h3 class="text-base font-bold text-brand-navy mb-2">Digital Training Solutions</h3>
+            <p class="text-xs text-brand-slate leading-relaxed mb-4">
+              Modern instructional design utilizing immersive VR simulations and clear digital procedures for shopfloor upskilling.
+            </p>
+            <ul class="text-xs text-brand-slate space-y-1.5 border-t border-brand-border pt-3">
+              <li>&bull; Virtual Reality (VR) training in Unity</li>
+              <li>&bull; Interactive digital work instructions</li>
+              <li>&bull; Training content development</li>
+              <li>&bull; Training Needs Analysis (TNA)</li>
+              <li>&bull; Training effectiveness evaluation</li>
+              <li>&bull; VR training for complex procedures</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-3 border-t border-brand-border text-[11px] font-mono text-brand-muted">
+            Reported: Reduced Time & High Accessibility
+          </div>
+        </div>
+
+        <!-- 3. AI Training & Evaluation -->
+        <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200 text-teal-700 flex items-center justify-center font-bold font-mono text-sm mb-4">
+              03
+            </div>
+            <h3 class="text-base font-bold text-brand-navy mb-2">AI Training & Evaluation</h3>
+            <p class="text-xs text-brand-slate leading-relaxed mb-4">
+              Project-based AI contributor experience evaluating LLM responses, comparing outputs, checking factual accuracy, and applying task-specific guidelines.
+            </p>
+            <ul class="text-xs text-brand-slate space-y-1.5 border-t border-brand-border pt-3">
+              <li>&bull; AI response evaluation</li>
+              <li>&bull; Response comparison & ranking</li>
+              <li>&bull; Factual accuracy & response checking</li>
+              <li>&bull; Prompt writing & response rewriting</li>
+              <li>&bull; Data annotation & labeling</li>
+              <li>&bull; Instruction-following constraint checking</li>
+              <li>&bull; Translation & localization tasks</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-3 border-t border-brand-border text-[11px] font-mono text-brand-muted">
+            Contributor: Outlier AI (Project-based)
+          </div>
+        </div>
+
+        <!-- 4. Manufacturing & Quality Domain -->
+        <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-slate-100 border border-slate-200 text-brand-navy flex items-center justify-center font-bold font-mono text-sm mb-4">
+              04
+            </div>
+            <h3 class="text-base font-bold text-brand-navy mb-2">Manufacturing & Quality Domain</h3>
+            <p class="text-xs text-brand-slate leading-relaxed mb-4">
+              Practical immersion in industrial factory operations, standard operating procedures, and structured problem-solving frameworks.
+            </p>
+            <ul class="text-xs text-brand-slate space-y-1.5 border-t border-brand-border pt-3">
+              <li>&bull; Electronics manufacturing context</li>
+              <li>&bull; Industry 4.0 shopfloor workflows</li>
+              <li>&bull; Technical documentation & reporting</li>
+              <li>&bull; Pareto (80/20) defect prioritization*</li>
+              <li>&bull; Ishikawa Fishbone root-cause mapping*</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-3 border-t border-brand-border text-[11px] font-mono text-brand-muted">
+            *Quality tools demonstrated as sample/knowledge
+          </div>
+        </div>
+
+        <!-- 5. Data & Reporting -->
+        <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-slate-100 border border-slate-200 text-brand-navy flex items-center justify-center font-bold font-mono text-sm mb-4">
+              05
+            </div>
+            <h3 class="text-base font-bold text-brand-navy mb-2">Data & Reporting</h3>
+            <p class="text-xs text-brand-slate leading-relaxed mb-4">
+              Operational documentation, status tracking, milestone reporting, and basic data organization for decision support.
+            </p>
+            <ul class="text-xs text-brand-slate space-y-1.5 border-t border-brand-border pt-3">
+              <li>&bull; Project tracking & status reporting</li>
+              <li>&bull; Status documentation & reporting</li>
+              <li>&bull; Basic data validation & cleaning*</li>
+              <li>&bull; Tabular aggregation & defect frequency*</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-3 border-t border-brand-border text-[11px] font-mono text-brand-muted">
+            *Data analysis presented via synthetic demonstration
+          </div>
+        </div>
+
+        <!-- 6. Professional Integrity Commitment -->
+        <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-sm flex flex-col justify-between bg-gradient-to-br from-white to-slate-50">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 text-amber-800 flex items-center justify-center font-bold font-mono text-sm mb-4">
+              !
+            </div>
+            <h3 class="text-base font-bold text-brand-navy mb-2">Professional Integrity Standard</h3>
+            <p class="text-xs text-brand-slate leading-relaxed mb-4">
+              Full transparency on capabilities and verified experience. No exaggerated job titles or unproven qualifications.
+            </p>
+            <p class="text-xs text-brand-muted leading-relaxed border-t border-brand-border pt-3">
+              {profileData.unverifiedClaimsNotice}
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-brand-border text-[11px] font-mono text-brand-muted">
+            Fact-checked & Source-verified
+          </div>
+        </div>
+      </div>
+      </Reveal>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK / CASE STUDIES SECTION -->
+  <section id="case-studies" class="py-16 md:py-24 border-b border-brand-border bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Reveal client:visible={{ rootMargin: "150px" }}>
+        <div class="max-w-2xl mb-12">
+          <div class="text-xs font-mono font-bold uppercase tracking-wider text-brand-accent mb-2">Selected Work</div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy tracking-tight mb-4">
+            Case Studies & Demonstrations
+          </h2>
+          <p class="text-sm sm:text-base text-brand-slate">
+            Detailed case studies across Smart Factory delivery, digital training solutions, AI response grading, and manufacturing defect analysis.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          {caseStudiesList.map((cs) => (
+            <InteractiveCaseCard client:visible={{ rootMargin: "120px" }}>
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="text-xs uppercase font-mono font-bold px-2.5 py-1 rounded bg-white border border-brand-border text-brand-navy">
+                    {cs.category}
+                  </span>
+                  <span class={`text-xs font-mono font-medium px-2.5 py-1 rounded-full border ${badgeColors[cs.badgeType]}`}>
+                    {cs.badge}
+                  </span>
+                </div>
+                <span class="text-xs font-mono text-brand-muted">
+                  Case Study {cs.id.toUpperCase()}
+                </span>
+              </div>
+
+              <h3 class="text-xl sm:text-2xl font-bold text-brand-navy group-hover:text-brand-accent transition-colors mb-3">
+                <a href={`/case-studies/${cs.slug}/`}>
+                  {cs.title}
+                </a>
+              </h3>
+
+              <p class="text-sm text-brand-slate leading-relaxed mb-6 max-w-3xl">
+                {cs.summary}
+              </p>
+
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-brand-border">
+                <div class="flex flex-wrap gap-2">
+                  {cs.domains.map((d: string) => (
+                    <span class="text-xs font-mono px-2 py-0.5 rounded bg-white text-brand-slate border border-brand-border">
+                      {d}
+                    </span>
+                  ))}
+                </div>
+
+                <a
+                  href={`/case-studies/${cs.slug}/`}
+                  class="inline-flex items-center gap-1.5 text-xs font-bold font-mono uppercase tracking-wider text-brand-accent hover:text-brand-accenthover group-hover:translate-x-1 transition-all"
+                >
+                  Read Full Study &rarr;
+                </a>
+              </div>
+            </InteractiveCaseCard>
+          ))}
+        </div>
+      </Reveal>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION SECTION -->
+  <section id="experience" class="py-16 md:py-24 border-b border-brand-border bg-[#F8FAFC]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Reveal client:visible={{ rootMargin: "150px" }}>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Work Experience Timeline -->
+        <div class="lg:col-span-7">
+          <div class="text-xs font-mono font-bold uppercase tracking-wider text-brand-accent mb-2">Work History</div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy tracking-tight mb-8">
+            Verified Professional Experience
+          </h2>
+
+          <div class="space-y-8 relative before:absolute before:inset-0 before:left-3 before:w-0.5 before:bg-brand-border">
+            {profileData.experience.map((job) => (
+              <div class="relative pl-8">
+                <span class="absolute left-1.5 top-1.5 w-3.5 h-3.5 rounded-full bg-white border-2 border-brand-accent"></span>
+                <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-sm">
+                  <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+                    <h3 class="text-base font-bold text-brand-navy">{job.title}</h3>
+                    <span class="text-xs font-mono text-brand-accent font-semibold">{job.period}</span>
+                  </div>
+                  <div class="text-xs font-medium text-brand-muted mb-3">{job.organization} &bull; {job.type}</div>
+                  <p class="text-xs text-brand-slate leading-relaxed">{job.details}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Education & Skills / Tools / Languages -->
+        <div class="lg:col-span-5 space-y-8">
+          <!-- Education Card -->
+          <div>
+            <div class="text-xs font-mono font-bold uppercase tracking-wider text-brand-accent mb-2">Academic Foundation</div>
+            <h2 class="text-2xl font-extrabold text-brand-navy tracking-tight mb-4">Education</h2>
+            <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-sm">
+              <div class="text-sm font-bold text-brand-navy">{profileData.education.qualification}</div>
+              <div class="text-xs text-brand-muted mt-1">{profileData.education.institution}</div>
+              <div class="text-xs font-mono text-brand-accent mt-2">{profileData.education.period}</div>
+            </div>
+          </div>
+
+          <!-- Tools Card -->
+          <div>
+            <div class="text-xs font-mono font-bold uppercase tracking-wider text-brand-accent mb-2">Tooling Stack</div>
+            <h2 class="text-2xl font-extrabold text-brand-navy tracking-tight mb-4">Confirmed Tools</h2>
+            <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-sm space-y-3">
+              {profileData.tools.map((t) => (
+                <div class="flex items-start justify-between gap-4 pb-2 border-b border-brand-border last:border-0 last:pb-0">
+                  <span class="text-xs font-bold text-brand-navy font-mono">{t.name}</span>
+                  <span class="text-xs text-brand-slate text-right">{t.domain}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Languages Card -->
+          <div>
+            <div class="text-xs font-mono font-bold uppercase tracking-wider text-brand-accent mb-2">Communication</div>
+            <h2 class="text-2xl font-extrabold text-brand-navy tracking-tight mb-4">Languages</h2>
+            <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-sm space-y-3">
+              {profileData.languages.map((l) => (
+                <div class="flex items-center justify-between pb-2 border-b border-brand-border last:border-0 last:pb-0">
+                  <span class="text-xs font-bold text-brand-navy">{l.name}</span>
+                  <span class="text-xs font-mono font-semibold text-brand-slate bg-brand-bg px-2 py-0.5 rounded border border-brand-border">
+                    {l.level}
+                  </span>
+                </div>
+              ))}
+              <p class="text-[11px] text-brand-muted mt-2 pt-2 italic">
+                *Self-described proficiency levels, not formal test scores.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </Reveal>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <Reveal client:visible={{ rootMargin: "150px" }}>
+        <div class="text-xs font-mono font-bold uppercase tracking-wider text-brand-accent mb-2">Connect Directly</div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight mb-4">
+        Ready for Remote Project & AI Collaboration
+      </h2>
+      <p class="text-base text-brand-slate max-w-xl mx-auto mb-8 leading-relaxed">
+        Looking for a disciplined coordinator for Smart Factory initiatives, a digital training developer, or a rigorous evaluator for technical AI datasets? Reach out directly.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="mailto:galihgilberto48@gmail.com"
+          class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-navy text-white text-sm font-semibold tracking-wide hover:bg-brand-deep transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+        >
+          <svg class="w-5 h-5 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          galihgilberto48@gmail.com
+        </a>
+        <a
+          href="https://www.linkedin.com/in/galihgilberto/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white border border-brand-border text-brand-navy text-sm font-semibold hover:border-brand-accent hover:text-brand-accent transition-all shadow-sm flex items-center justify-center gap-2"
+        >
+          <svg class="w-5 h-5 text-brand-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.738-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn Profile
+        </a>
+      </div>
+
+      <div class="mt-8 text-xs text-brand-muted font-mono">
+        Location: Indonesia &bull; Remote Available &bull; No telephone number exposed for privacy
+      </div>
+      </Reveal>
+    </div>
+  </section>
+</BaseLayout>

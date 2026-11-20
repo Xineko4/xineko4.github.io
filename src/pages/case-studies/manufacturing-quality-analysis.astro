@@ -1,0 +1,194 @@
+---
+import CaseStudyLayout from '../../layouts/CaseStudyLayout.astro';
+---
+
+<CaseStudyLayout
+  title="Manufacturing Quality & Defect Trend Analysis"
+  badge="Self-initiated demonstration — synthetic data"
+  badgeType="synthetic"
+  category="Manufacturing Domain Knowledge"
+  summary="A demonstration of structured quality data analysis using synthetic assembly line defect counts, Pareto frequency prioritization (80/20 rule), and Fishbone root-cause exploration."
+  confidentialityNote="All data, line identifiers, and defect classifications in this case study are 100% synthetic and created purely for portfolio demonstration. They do not represent Panasonic Industrial Devices Batam or any real commercial facility."
+  domains={["Synthetic Data Demonstration", "Pareto Prioritization", "Defect Categorization", "Root-Cause Framework"]}
+>
+  <h2>Demonstration Objective</h2>
+  <p>
+    This self-initiated project demonstrates how manufacturing domain knowledge is applied to organize raw inspection logs, identify defect concentrations using the Pareto principle (80/20 rule), and structure collaborative root-cause investigations.
+  </p>
+
+  <h2>Synthetic Dataset Overview</h2>
+  <p>
+    The dataset simulates 500 total recorded defect occurrences from an automated surface-mount assembly line across a 30-day synthetic monitoring period:
+  </p>
+
+  <div class="my-6 overflow-x-auto not-prose">
+    <table class="w-full text-left text-xs border-collapse border border-brand-border bg-white">
+      <thead>
+        <tr class="bg-brand-cardmuted text-brand-navy">
+          <th class="p-3 border border-brand-border font-bold">Defect Code</th>
+          <th class="p-3 border border-brand-border font-bold">Description</th>
+          <th class="p-3 border border-brand-border font-bold text-right">Occurrence Count</th>
+          <th class="p-3 border border-brand-border font-bold text-right">Percentage</th>
+          <th class="p-3 border border-brand-border font-bold text-right">Cumulative %</th>
+          <th class="p-3 border border-brand-border font-bold">Pareto Classification</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-brand-border text-brand-slate font-mono">
+        <tr class="bg-amber-50/50">
+          <td class="p-3 border border-brand-border font-bold text-brand-navy">DEF-01</td>
+          <td class="p-3 border border-brand-border font-sans font-medium text-brand-navy">Solder Bridging (Fine Pitch IC)</td>
+          <td class="p-3 border border-brand-border text-right font-bold">215</td>
+          <td class="p-3 border border-brand-border text-right">43.0%</td>
+          <td class="p-3 border border-brand-border text-right font-bold text-brand-accent">43.0%</td>
+          <td class="p-3 border border-brand-border font-sans font-semibold text-amber-800">Vital Few (Class A)</td>
+        </tr>
+        <tr class="bg-amber-50/50">
+          <td class="p-3 border border-brand-border font-bold text-brand-navy">DEF-02</td>
+          <td class="p-3 border border-brand-border font-sans font-medium text-brand-navy">Component Tombstoning (0402 Passive)</td>
+          <td class="p-3 border border-brand-border text-right font-bold">145</td>
+          <td class="p-3 border border-brand-border text-right">29.0%</td>
+          <td class="p-3 border border-brand-border text-right font-bold text-brand-accent">72.0%</td>
+          <td class="p-3 border border-brand-border font-sans font-semibold text-amber-800">Vital Few (Class A)</td>
+        </tr>
+        <tr>
+          <td class="p-3 border border-brand-border font-bold text-brand-navy">DEF-03</td>
+          <td class="p-3 border border-brand-border font-sans">Insufficient Solder Fillet</td>
+          <td class="p-3 border border-brand-border text-right">65</td>
+          <td class="p-3 border border-brand-border text-right">13.0%</td>
+          <td class="p-3 border border-brand-border text-right">85.0%</td>
+          <td class="p-3 border border-brand-border font-sans text-brand-muted">Useful Many (Class B)</td>
+        </tr>
+        <tr>
+          <td class="p-3 border border-brand-border font-bold text-brand-navy">DEF-04</td>
+          <td class="p-3 border border-brand-border font-sans">Component Misalignment / Skew</td>
+          <td class="p-3 border border-brand-border text-right">45</td>
+          <td class="p-3 border border-brand-border text-right">9.0%</td>
+          <td class="p-3 border border-brand-border text-right">94.0%</td>
+          <td class="p-3 border border-brand-border font-sans text-brand-muted">Useful Many (Class C)</td>
+        </tr>
+        <tr>
+          <td class="p-3 border border-brand-border font-bold text-brand-navy">DEF-05</td>
+          <td class="p-3 border border-brand-border font-sans">Solder Ball Splatter</td>
+          <td class="p-3 border border-brand-border text-right">30</td>
+          <td class="p-3 border border-brand-border text-right">6.0%</td>
+          <td class="p-3 border border-brand-border text-right">100.0%</td>
+          <td class="p-3 border border-brand-border font-sans text-brand-muted">Useful Many (Class C)</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="bg-brand-cardmuted font-bold text-brand-navy">
+          <td colspan="2" class="p-3 border border-brand-border">Total Synthetic Observations</td>
+          <td class="p-3 border border-brand-border text-right font-mono">500</td>
+          <td class="p-3 border border-brand-border text-right font-mono">100%</td>
+          <td colspan="2" class="p-3 border border-brand-border"></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <h2>Pareto Distribution Visualization</h2>
+  <div class="my-6 p-5 rounded-xl border border-brand-border bg-white shadow-sm not-prose">
+    <div class="flex items-center justify-between mb-4">
+      <span class="text-xs font-mono font-bold text-brand-navy uppercase">Visual Pareto Breakdown</span>
+      <span class="text-xs font-mono text-brand-accent font-semibold">Top 2 defect types account for 72.0% of failures</span>
+    </div>
+    
+    <div class="space-y-4 font-mono text-xs">
+      <div>
+        <div class="flex justify-between mb-1">
+          <span class="font-sans font-semibold text-brand-navy">Solder Bridging (215 counts)</span>
+          <span class="text-brand-slate font-bold">43.0%</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-3">
+          <div class="bg-brand-navy h-3 rounded-full" style="width: 43.0%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between mb-1">
+          <span class="font-sans font-semibold text-brand-navy">Component Tombstoning (145 counts)</span>
+          <span class="text-brand-slate font-bold">29.0%</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-3">
+          <div class="bg-brand-accent h-3 rounded-full" style="width: 29.0%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between mb-1">
+          <span class="font-sans font-semibold text-brand-navy">Insufficient Solder (65 counts)</span>
+          <span class="text-brand-slate font-bold">13.0%</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-3">
+          <div class="bg-slate-400 h-3 rounded-full" style="width: 13.0%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between mb-1">
+          <span class="font-sans font-semibold text-brand-navy">Component Skew (45 counts)</span>
+          <span class="text-brand-slate font-bold">9.0%</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-3">
+          <div class="bg-slate-300 h-3 rounded-full" style="width: 9.0%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between mb-1">
+          <span class="font-sans font-semibold text-brand-navy">Solder Balls (30 counts)</span>
+          <span class="text-brand-slate font-bold">6.0%</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-3">
+          <div class="bg-slate-200 h-3 rounded-full" style="width: 6.0%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Root Cause Analysis Framework (Ishikawa Fishbone)</h2>
+  <p>
+    Focusing engineering efforts on the #1 issue—<strong>Solder Bridging (43% of defects)</strong>—a multi-branch Ishikawa framework organizes hypotheses across the classic 4M manufacturing categories:
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
+    <div class="p-4 rounded-xl border border-brand-border bg-white">
+      <div class="text-xs font-mono font-bold text-brand-accent uppercase mb-1">Machine Factors</div>
+      <ul class="text-xs text-brand-slate space-y-1 list-disc pl-4 mt-2">
+        <li>Squeegee blade wear resulting in uneven solder paste print pressure.</li>
+        <li>Stencil separation speed too high, causing paste drag across fine pads.</li>
+        <li>Conveyor vibration during transfer into reflow oven zone.</li>
+      </ul>
+    </div>
+    <div class="p-4 rounded-xl border border-brand-border bg-white">
+      <div class="text-xs font-mono font-bold text-brand-accent uppercase mb-1">Material Factors</div>
+      <ul class="text-xs text-brand-slate space-y-1 list-disc pl-4 mt-2">
+        <li>Solder paste viscosity degradation due to extended exposure on stencil.</li>
+        <li>PCB pad oxidation or solder mask thickness variance between board lots.</li>
+        <li>Flux activity decay in high-temperature ambient conditions.</li>
+      </ul>
+    </div>
+    <div class="p-4 rounded-xl border border-brand-border bg-white">
+      <div class="text-xs font-mono font-bold text-brand-accent uppercase mb-1">Method Factors</div>
+      <ul class="text-xs text-brand-slate space-y-1 list-disc pl-4 mt-2">
+        <li>Inadequate stencil under-wipe cleaning frequency (wiping every 10 boards instead of 5).</li>
+        <li>Suboptimal reflow thermal profile with excessive ramp rate causing paste slumping.</li>
+        <li>Misaligned fiducial offset calibration during setup changeover.</li>
+      </ul>
+    </div>
+    <div class="p-4 rounded-xl border border-brand-border bg-white">
+      <div class="text-xs font-mono font-bold text-brand-accent uppercase mb-1">Man (Operator & Process)</div>
+      <ul class="text-xs text-brand-slate space-y-1 list-disc pl-4 mt-2">
+        <li>Shift handover inconsistency in recording solder paste thaw timing.</li>
+        <li>Manual visual inspection fatigue during end-of-shift cycles.</li>
+        <li>Training variance on stencil cleaning verification standards.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Corrective Action Recommendation Framework</h2>
+  <p>
+    By pairing Pareto prioritization with root-cause categorization, plant teams avoid scattering resources across low-impact issues. Instead, an actionable three-step remediation plan is developed:
+  </p>
+  <ol>
+    <li><strong>Immediate Containment:</strong> Increase automatic stencil wipe frequency from 10 to 5 boards and enforce digital thaw-time logging.</li>
+    <li><strong>Preventive Engineering:</strong> Conduct reflow oven thermal profiling to optimize preheat soak temperature and prevent paste slumping.</li>
+    <li><strong>Standardization:</strong> Update digital work instructions and train operators on visual squeegee inspection criteria.</li>
+  </ol>
+</CaseStudyLayout>
