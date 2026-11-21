@@ -32,7 +32,7 @@ const STAGES: Stage[] = [
     step: '03',
     label: 'Implement',
     description: 'Support rollout and adoption.',
-    focus: 'Implementation, VR training & digital work instructions',
+    focus: 'Implementation, VR/MR training & digital work instructions',
     nodeX: 228,
   },
   {
@@ -253,10 +253,10 @@ export default function HeroDeliveryMap() {
         </AnimatePresence>
       </div>
 
-      {/* Static Verified Summary Line */}
+      {/* Static Summary Line */}
       <div className="mt-3.5 pt-3 border-t border-brand-border">
         <p className="text-[11px] font-mono text-brand-slate leading-relaxed">
-          6 years &bull; Multiple departments &bull; VR &amp; digital training &bull; AI evaluation
+          6 years &bull; Multiple departments &bull; VR/MR &amp; digital training &bull; AI evaluation
         </p>
         <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-[11px] text-brand-muted">
           <span>Batam, Indonesia</span>

@@ -37,7 +37,7 @@ AI response evaluation; response comparison and ranking; factual accuracy checks
 - Independent AI Task Contributor, Outlier AI | project-based; dates/task count not supplied.
 
 ## Education
-Bachelor’s Degree, Information Technology | 2024 – 2026. Institution not supplied.
+Bachelor’s Degree, Information Technology | Universitas Ibnu Sina | 2024 – 2026.
 
 ## Tools
 - Outlier AI — AI response evaluation, comparison & ranking, factual accuracy, annotation & labeling.
@@ -45,8 +45,9 @@ Bachelor’s Degree, Information Technology | 2024 – 2026. Institution not sup
 - Microsoft Excel — data organization, pivot tables, reporting (self-rated intermediate).
 - Power BI — dashboard and operational reporting (self-rated intermediate).
 - Power Platform — workflow automation and RPA support (self-rated intermediate).
-- Unity — VR training development, interactive modules, 3D asset integration, testing.
-- Blender — 3D asset creation and optimization.
+- Unity — VR/MR training development, interactive modules, 3D asset integration, testing.
+- HoloLens 2 / Meta Quest — Mixed Reality training delivery and device-aware interaction design.
+- Blender — 3D asset creation and optimization for VR/MR training content.
 - Microsoft Project — project planning and schedule tracking.
 - Digital workflow / RPA — operational process digitization and tracking.
 

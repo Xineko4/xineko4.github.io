@@ -9,9 +9,10 @@ Responsibilities: project planning, coordination, implementation, monitoring/eva
 Workflow: understand needs → clarify objectives/scope → plan activities/resources → coordinate stakeholders → support implementation → monitor progress → evaluate and document lessons.
 Do not invent project names, counts, budget, team size, timeline, or numeric results.
 
-## 2. Digital Training Solutions: VR & Digital Work Instructions
+## 2. Digital Training Solutions: VR, MR & Digital Work Instructions
 Label: Experience-based case study — anonymized.
-Scope: VR training, digital work instructions, training content development, training needs analysis, training effectiveness evaluation.
+Scope: VR training, Mixed Reality (MR) training, digital work instructions, training content development, training needs analysis, training effectiveness evaluation.
+Device context: MR implementation with device-aware options such as HoloLens 2 (see-through overlays) or Meta Quest (untethered simulation). Do not claim both devices were deployed unless confirmed.
 Lifecycle: needs analysis → objectives → solution selection/design → content development → implementation → evaluation.
 Reported impact: reduced training time and improved accessibility. Do not invent percentages, learner counts, cost savings, completion rates, or assessment scores.
 

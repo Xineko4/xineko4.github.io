@@ -17,6 +17,7 @@
   ],
   "training_solutions": [
     "VR training",
+    "Mixed Reality (MR) training",
     "Digital work instructions",
     "Training content development",
     "Training needs analysis",
@@ -56,7 +57,7 @@
   ],
   "education": {
     "qualification": "Bachelor’s Degree, Information Technology",
-    "institution": "",
+    "institution": "Universitas Ibnu Sina",
     "period": "2024 – 2026"
   },
   "tools": [
@@ -65,8 +66,9 @@
     "Microsoft Excel — data organization, pivot tables, reporting (self-rated intermediate)",
     "Power BI — dashboard and operational reporting (self-rated intermediate)",
     "Power Platform — workflow automation and RPA support (self-rated intermediate)",
-    "Unity — VR training development, interactive modules, 3D asset integration, testing",
-    "Blender — 3D asset creation and optimization",
+    "Unity — VR/MR training development, interactive modules, 3D asset integration, testing",
+    "HoloLens 2 / Meta Quest — Mixed Reality training delivery and device-aware interaction design",
+    "Blender — 3D asset creation and optimization for VR/MR training content",
     "Microsoft Project — project planning and schedule tracking",
     "Digital workflow / RPA — operational process digitization and tracking"
   ],

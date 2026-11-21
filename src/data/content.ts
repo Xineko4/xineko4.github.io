@@ -15,13 +15,13 @@ export const profileData = {
   location: "Indonesia",
   email: "galihgilberto48@gmail.com",
   linkedin: "https://www.linkedin.com/in/galihgilberto/",
-  headline: "Smart Factory Project Management | Digital Training Solutions | AI Training & Evaluation",
+  headline: "Smart Factory Project Management | Digital Training Solutions (VR/MR) | AI Training & Evaluation",
   smartFactoryExperienceYears: 6,
   projectScope: "Multiple projects across departments",
-  heroSummary: "Six years coordinating Smart Factory projects across manufacturing departments, with experience in VR training, digital work instructions, and project-based AI response evaluation.",
-  shortProfile: "Project management and digital training solutions professional with six years of experience supporting Smart Factory initiatives across multiple departments. Experienced in project planning, coordination, implementation, monitoring and evaluation, stakeholder management, and budget/resource management. Training-solution experience includes VR training, digital work instructions, training content development, training needs analysis, and training effectiveness evaluation. Also has project-based AI task experience.",
+  heroSummary: "Six years coordinating Smart Factory projects across manufacturing departments, with experience in VR/MR training, digital work instructions, and project-based AI response evaluation.",
+  shortProfile: "Project management and digital training solutions professional with six years of experience supporting Smart Factory initiatives across multiple departments. Experienced in project planning, coordination, implementation, monitoring and evaluation, stakeholder management, and budget/resource management. Training-solution experience includes VR and Mixed Reality (MR) training, digital work instructions, training content development, training needs analysis, and training effectiveness evaluation. Also has project-based AI task experience.",
   aboutText: [
-    "My professional background combines manufacturing operations, Smart Factory project coordination, and digital training solutions. Over six years, I have handled projects across departments, supporting work from planning and coordination through implementation, monitoring, and evaluation. My training-solution experience includes VR training, digital work instructions, training content development, training needs analysis, and training effectiveness evaluation.",
+    "My professional background combines manufacturing operations, Smart Factory project coordination, and digital training solutions. Over six years, I have handled projects across departments, supporting work from planning and coordination through implementation, monitoring, and evaluation. My training-solution experience includes VR and Mixed Reality (MR) training, digital work instructions, training content development, training needs analysis, and training effectiveness evaluation.",
     "I have also completed project-based AI data tasks, including AI response evaluation, response comparison and ranking, factual accuracy checks, prompt writing, response rewriting, data annotation and labeling, instruction-following evaluation, and translation/localization tasks.",
     "I am interested in remote opportunities where practical workplace knowledge, structured problem-solving, project delivery, and careful evaluation of AI-generated content are valuable."
   ],
@@ -35,6 +35,7 @@ export const profileData = {
   ],
   trainingSolutions: [
     "VR training",
+    "Mixed Reality (MR) training",
     "Digital work instructions",
     "Training content development",
     "Training needs analysis",
@@ -80,7 +81,7 @@ export const profileData = {
   ],
   education: {
     qualification: "Bachelor’s Degree, Information Technology",
-    institution: "",
+    institution: "Universitas Ibnu Sina",
     period: "2024 – 2026"
   },
   tools: [
@@ -89,8 +90,9 @@ export const profileData = {
     { name: "Microsoft Excel", domain: "Data organization, pivot tables, progress tracking, and reporting (self-rated intermediate)" },
     { name: "Power BI", domain: "Dashboard and reporting for operational data (self-rated intermediate)" },
     { name: "Power Platform", domain: "Workflow automation and RPA support (self-rated intermediate)" },
-    { name: "Unity", domain: "VR training development, interactive modules, 3D asset integration, and testing" },
-    { name: "Blender", domain: "3D asset creation and optimization for VR training content" },
+    { name: "Unity", domain: "VR/MR training development, interactive modules, 3D asset integration, and testing" },
+    { name: "HoloLens 2 / Meta Quest", domain: "Mixed Reality training delivery and device-aware interaction design" },
+    { name: "Blender", domain: "3D asset creation and optimization for VR/MR training content" },
     { name: "Microsoft Project", domain: "Project planning and schedule tracking" },
     { name: "Digital Workflow / RPA", domain: "Operational process digitization, tracking, and automation initiatives" }
   ],
@@ -111,12 +113,12 @@ export const caseStudiesList: CaseStudyMeta[] = [
   {
     id: "training-solutions",
     slug: "digital-training-solutions",
-    title: "Digital Training Solutions: VR & Digital Work Instructions",
+    title: "Digital Training Solutions: VR, MR & Digital Work Instructions",
     badge: "Experience-based case study — anonymized",
     badgeType: "anonymized",
-    category: "Digital Learning & VR",
-    summary: "End-to-end training lifecycle from instructional needs assessment to VR development and digital work instruction rollout, with reported reductions in training time and improved accessibility.",
-    domains: ["VR Training", "Digital Work Instructions", "Training Needs Analysis", "Effectiveness Evaluation"]
+    category: "Digital Learning, VR & MR",
+    summary: "End-to-end training lifecycle from instructional needs assessment to VR/MR development and digital work instruction rollout, with reported reductions in training time and improved accessibility.",
+    domains: ["VR & MR Training", "Digital Work Instructions", "Training Needs Analysis", "Effectiveness Evaluation"]
   },
   {
     id: "ai-eval",
