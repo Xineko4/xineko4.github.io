@@ -1,4 +1,4 @@
-# Galih Giri — Antigravity Portfolio Kit
+# Gilbert — Portfolio Kit
 
 ## Contents
 - `MASTER_BUILD_PROMPT.md`: full implementation prompt. Open the extracted folder in Antigravity CLI and provide this prompt.

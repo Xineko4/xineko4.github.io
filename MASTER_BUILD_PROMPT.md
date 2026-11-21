@@ -1,4 +1,4 @@
-# MASTER PROMPT — BUILD GALIH GIRI'S PROFESSIONAL PORTFOLIO
+# MASTER PROMPT — BUILD GILBERT'S PROFESSIONAL PORTFOLIO
 
 Act as a senior product designer, UX writer, and frontend engineer. Build the complete, production-ready portfolio website in the current repository. Do not stop at a mockup or plan: inspect the repo, implement all pages/sections, run the build, fix errors, and provide run/deploy instructions.
 
@@ -11,16 +11,16 @@ Read these files first and use them as the factual source:
 Do not invent facts, dates, project counts, team sizes, budgets, metrics, certifications, client endorsements, technical skills, or achievements. If a fact is missing, omit it or use a clearly marked placeholder. Demo projects must be labelled as demos/synthetic, not actual client work. Never publish confidential employer materials, internal documents, client data, or private Outlier/Charon/DataForce rubrics.
 
 ## Positioning
-Display name: Galih Giri
-Full name: Galih Galuh Giri Gilberto
-Headline: **Smart Factory Project Management | Digital Training Solutions | AI Training & Evaluation**
-Primary identity: six years handling Smart Factory project management and training solutions across multiple departments.
+Display name: Gilbert
+Full name: Gilbert
+Headline: **Digital Training, AI Evaluation & Project Delivery**
+Primary identity: six years handling manufacturing project management and training solutions across multiple departments.
 Responsibilities: project planning, coordination, implementation, monitoring & evaluation, stakeholder management, budget/resource management.
-Training solutions: VR training, digital work instructions, training content development, training needs analysis, training effectiveness evaluation.
+Training solutions: VR and Mixed Reality (MR) training, digital work instructions, training content development, training needs analysis, training effectiveness evaluation.
 Reported impact: reduced training time and improved accessibility. Do not invent percentages or numerical KPIs.
 AI experience: project-based tasks including AI response evaluation, response comparison/ranking, factual accuracy checks, prompt writing, response rewriting, data annotation/labeling, instruction-following evaluation, and translation/localization.
 
-Do not position Galih as a Data Scientist. Do not claim professional Python, SQL, machine learning, statistical modelling, Power BI, Tableau, or advanced Excel skills unless later confirmed. Do not claim six years of AI experience.
+Do not position Gilbert as a Data Scientist. Do not claim professional Python, SQL, machine learning, statistical modelling, Power BI, Tableau, or advanced Excel skills unless later confirmed. Do not claim six years of AI experience.
 
 ## Target visitors
 Remote freelance clients, AI training vendors, Project/PMO recruiters, digital learning teams, manufacturing/Smart Factory teams, operations and data-quality hiring managers.
