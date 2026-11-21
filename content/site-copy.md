@@ -37,7 +37,18 @@ AI response evaluation; response comparison and ranking; factual accuracy checks
 - Independent AI Task Contributor, Outlier AI | project-based; dates/task count not supplied.
 
 ## Education
-Bachelor’s Degree, Information Technology | Universitas Ibnu Sina | 2024 – 2026.
+- Bachelor’s Degree, Information Technology | Universitas Ibnu Sina | 2024 – 2026.
+- Associate’s Degree, Information Technology | Politeknik Negeri Batam | August 2017 – August 2020.
+
+## Core Skills
+### AI & Evaluation
+AI Response Evaluation; Technical Fact-Checking; Rubric Design.
+
+### Quality & Process
+Root-Cause Analysis; Defect Analysis; Process Improvement.
+
+### Documentation & Language
+Technical Documentation; Indonesian–English Technical Review.
 
 ## Tools
 - Outlier AI — AI response evaluation, comparison & ranking, factual accuracy, annotation & labeling.

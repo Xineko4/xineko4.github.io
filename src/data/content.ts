@@ -84,6 +84,25 @@ export const profileData = {
     institution: "Universitas Ibnu Sina",
     period: "2024 – 2026"
   },
+  priorEducation: {
+    qualification: "Associate’s Degree, Information Technology",
+    institution: "Politeknik Negeri Batam",
+    period: "August 2017 – August 2020"
+  },
+  coreSkillGroups: [
+    {
+      label: "AI & Evaluation",
+      skills: ["AI Response Evaluation", "Technical Fact-Checking", "Rubric Design"]
+    },
+    {
+      label: "Quality & Process",
+      skills: ["Root-Cause Analysis", "Defect Analysis", "Process Improvement"]
+    },
+    {
+      label: "Documentation & Language",
+      skills: ["Technical Documentation", "Indonesian–English Technical Review"]
+    }
+  ],
   tools: [
     { name: "Outlier AI", domain: "AI response evaluation, comparison & ranking, factual accuracy checks, annotation & labeling, guideline-based review" },
     { name: "Google Gemini", domain: "Prompt writing, response rewriting, and evaluation benchmarking" },

@@ -267,6 +267,37 @@ const badgeColors = {
           </div>
         </div>
       </div>
+
+      <!-- CORE SKILLS -->
+      <div class="mt-10 pt-8 border-t border-brand-border">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-5">
+          <div>
+            <div class="text-xs font-mono font-bold uppercase tracking-wider text-brand-accent mb-1">Core Skills</div>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-brand-navy tracking-tight">8 Skills for AI-Era Delivery</h3>
+          </div>
+          <p class="text-xs text-brand-muted max-w-md">
+            AI evaluation and data quality first; quality, process, and documentation underneath.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {profileData.coreSkillGroups.map((group) => (
+            <div class="bg-white p-5 rounded-2xl border border-brand-border shadow-sm">
+              <div class="text-[11px] font-mono font-bold uppercase tracking-wider text-brand-teal mb-3">
+                {group.label}
+              </div>
+              <ul class="space-y-2">
+                {group.skills.map((skill) => (
+                  <li class="text-sm text-brand-slate flex items-start gap-2">
+                    <span class="text-brand-accent font-mono">•</span>
+                    <span>{skill}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
       </Reveal>
     </div>
   </section>
@@ -376,6 +407,12 @@ const badgeColors = {
                 <div class="text-xs text-brand-muted mt-1">{profileData.education.institution}</div>
               )}
               <div class="text-xs font-mono text-brand-accent mt-2">{profileData.education.period}</div>
+
+              <div class="mt-3 pt-3 border-t border-brand-border">
+                <div class="text-sm font-bold text-brand-navy">{profileData.priorEducation.qualification}</div>
+                <div class="text-xs text-brand-muted mt-1">{profileData.priorEducation.institution}</div>
+                <div class="text-xs font-mono text-brand-accent mt-2">{profileData.priorEducation.period}</div>
+              </div>
             </div>
           </div>
 

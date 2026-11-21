@@ -60,6 +60,25 @@
     "institution": "Universitas Ibnu Sina",
     "period": "2024 – 2026"
   },
+  "prior_education": {
+    "qualification": "Associate’s Degree, Information Technology",
+    "institution": "Politeknik Negeri Batam",
+    "period": "August 2017 – August 2020"
+  },
+  "core_skill_groups": [
+    {
+      "label": "AI & Evaluation",
+      "skills": ["AI Response Evaluation", "Technical Fact-Checking", "Rubric Design"]
+    },
+    {
+      "label": "Quality & Process",
+      "skills": ["Root-Cause Analysis", "Defect Analysis", "Process Improvement"]
+    },
+    {
+      "label": "Documentation & Language",
+      "skills": ["Technical Documentation", "Indonesian–English Technical Review"]
+    }
+  ],
   "tools": [
     "Outlier AI — AI response evaluation, comparison & ranking, factual accuracy, annotation & labeling",
     "Google Gemini — prompt writing, response rewriting, evaluation benchmarking",
