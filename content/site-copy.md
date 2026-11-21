@@ -37,13 +37,18 @@ AI response evaluation; response comparison and ranking; factual accuracy checks
 - Independent AI Task Contributor, Outlier AI | project-based; dates/task count not supplied.
 
 ## Education
-Associate’s Degree, Information Technology, Politeknik Negeri Batam | August 2017 – August 2020.
-
-## Languages
-Indonesian (Native), English (Advanced), Japanese (Intermediate). Self-described levels, not formal test scores.
+Bachelor’s Degree, Information Technology | 2024 – 2026. Institution not supplied.
 
 ## Tools
-Unity (VR training context), Google Gemini, Outlier AI, digital workflow/RPA initiatives.
+- Outlier AI — AI response evaluation, comparison & ranking, factual accuracy, annotation & labeling.
+- Google Gemini — prompt writing, response rewriting, evaluation benchmarking.
+- Microsoft Excel — data organization, pivot tables, reporting (self-rated intermediate).
+- Power BI — dashboard and operational reporting (self-rated intermediate).
+- Power Platform — workflow automation and RPA support (self-rated intermediate).
+- Unity — VR training development, interactive modules, 3D asset integration, testing.
+- Blender — 3D asset creation and optimization.
+- Microsoft Project — project planning and schedule tracking.
+- Digital workflow / RPA — operational process digitization and tracking.
 
 ## Do not claim without further evidence
 Professional Data Scientist; advanced Python; SQL proficiency; ML engineering; advanced Power BI/Tableau/Excel; PMP certification; quantified savings/KPIs; project count, budget, team size.

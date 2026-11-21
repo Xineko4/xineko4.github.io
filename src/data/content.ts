@@ -73,26 +73,26 @@ export const profileData = {
     {
       title: "Independent AI Task Contributor",
       organization: "Outlier AI",
-      period: "Project-based; dates not specified",
+      period: "Project-based",
       type: "Project-based Contributor",
       details: "Completed project-based tasks covering response evaluation, comparison & ranking, fact-checking, instruction adherence, prompt creation, and localization."
     }
   ],
   education: {
-    qualification: "Associate’s Degree, Information Technology",
-    institution: "Politeknik Negeri Batam",
-    period: "August 2017 – August 2020"
+    qualification: "Bachelor’s Degree, Information Technology",
+    institution: "",
+    period: "2024 – 2026"
   },
-  languages: [
-    { name: "Indonesian", level: "Native", note: "Self-described proficiency" },
-    { name: "English", level: "Advanced", note: "Self-described proficiency" },
-    { name: "Japanese", level: "Intermediate", note: "Self-described proficiency" }
-  ],
   tools: [
-    { name: "Unity", domain: "VR training simulation & interactive modules" },
-    { name: "Google Gemini", domain: "AI prompt engineering & evaluation benchmarking" },
-    { name: "Outlier AI", domain: "Project-based AI response evaluation & data annotation" },
-    { name: "Digital Workflow / RPA Initiatives", domain: "Operational process digitization & tracking" }
+    { name: "Outlier AI", domain: "AI response evaluation, comparison & ranking, factual accuracy checks, annotation & labeling, guideline-based review" },
+    { name: "Google Gemini", domain: "Prompt writing, response rewriting, and evaluation benchmarking" },
+    { name: "Microsoft Excel", domain: "Data organization, pivot tables, progress tracking, and reporting (self-rated intermediate)" },
+    { name: "Power BI", domain: "Dashboard and reporting for operational data (self-rated intermediate)" },
+    { name: "Power Platform", domain: "Workflow automation and RPA support (self-rated intermediate)" },
+    { name: "Unity", domain: "VR training development, interactive modules, 3D asset integration, and testing" },
+    { name: "Blender", domain: "3D asset creation and optimization for VR training content" },
+    { name: "Microsoft Project", domain: "Project planning and schedule tracking" },
+    { name: "Digital Workflow / RPA", domain: "Operational process digitization, tracking, and automation initiatives" }
   ],
   unverifiedClaimsNotice: "To ensure absolute professional transparency: no claims are made to Data Scientist titles, advanced Python/SQL programming, machine learning model architecture, PMP certification, or proprietary confidential metrics."
 };

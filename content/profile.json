@@ -51,33 +51,24 @@
     {
       "title": "Independent AI Task Contributor",
       "organization": "Outlier AI",
-      "period": "Project-based; dates not specified"
+      "period": "Project-based"
     }
   ],
   "education": {
-    "qualification": "Associate’s Degree, Information Technology",
-    "institution": "Politeknik Negeri Batam",
-    "period": "August 2017 – August 2020"
+    "qualification": "Bachelor’s Degree, Information Technology",
+    "institution": "",
+    "period": "2024 – 2026"
   },
-  "languages": [
-    {
-      "name": "Indonesian",
-      "level": "Native"
-    },
-    {
-      "name": "English",
-      "level": "Advanced"
-    },
-    {
-      "name": "Japanese",
-      "level": "Intermediate"
-    }
-  ],
   "tools": [
-    "Unity",
-    "Google Gemini",
-    "Outlier AI",
-    "Digital workflow/RPA initiatives"
+    "Outlier AI — AI response evaluation, comparison & ranking, factual accuracy, annotation & labeling",
+    "Google Gemini — prompt writing, response rewriting, evaluation benchmarking",
+    "Microsoft Excel — data organization, pivot tables, reporting (self-rated intermediate)",
+    "Power BI — dashboard and operational reporting (self-rated intermediate)",
+    "Power Platform — workflow automation and RPA support (self-rated intermediate)",
+    "Unity — VR training development, interactive modules, 3D asset integration, testing",
+    "Blender — 3D asset creation and optimization",
+    "Microsoft Project — project planning and schedule tracking",
+    "Digital workflow / RPA — operational process digitization and tracking"
   ],
   "unverified_claims_to_avoid": [
     "Data Scientist title",
