@@ -9,8 +9,8 @@ interface Props {
 }
 
 const {
-  title = "Galih Giri | Smart Factory Project Management & Digital Training Solutions",
-  description = "Professional portfolio of Galih Giri. 6 years managing Smart Factory initiatives, digital training solutions (VR/MR & digital work instructions), and project-based AI evaluation.",
+  title = "Gilbert | Digital Training, AI Evaluation & Project Delivery",
+  description = "Portfolio of Gilbert. Manufacturing project delivery, VR/MR training development, and project-based AI evaluation.",
   ogImage = "/galih-mark.svg"
 } = Astro.props;
 
@@ -55,20 +55,45 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://xineko4.
   <header class="sticky top-0 z-40 bg-[#F8FAFC]/95 backdrop-blur border-b border-brand-border">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="/" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-accent rounded p-1">
-        <img src="/galih-mark.svg" alt="Galih Giri Logo" class="w-8 h-8 rounded-lg shadow-sm" />
+        <img src="/galih-mark.svg" alt="Gilbert logo" class="w-8 h-8 rounded-lg shadow-sm" />
         <div class="flex flex-col">
-          <span class="font-bold text-brand-navy text-base tracking-tight group-hover:text-brand-accent transition-colors">Galih Giri</span>
+          <span class="font-bold text-brand-navy text-base tracking-tight group-hover:text-brand-accent transition-colors">Gilbert</span>
           <span class="text-[11px] text-brand-muted hidden sm:inline-block -mt-1 font-mono">Batam, Indonesia &bull; Open to remote</span>
         </div>
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-brand-slate" aria-label="Main Navigation">
-        <a href="/#about" data-nav-section="about" class="hover:text-brand-accent transition-colors">About</a>
-        <a href="/#expertise" data-nav-section="expertise" class="hover:text-brand-accent transition-colors">Expertise</a>
-        <a href="/#case-studies" data-nav-section="case-studies" class="hover:text-brand-accent transition-colors">Selected Work</a>
-        <a href="/#experience" data-nav-section="experience" class="hover:text-brand-accent transition-colors">Experience</a>
-        <a href="/#contact" data-nav-section="contact" class="hover:text-brand-accent transition-colors">Contact</a>
+      <nav class="hidden md:flex items-center gap-5 text-sm font-medium text-brand-slate" aria-label="Main Navigation">
+        <a href="/#hub" class="hover:text-brand-accent transition-colors">Hub</a>
+
+        <details class="nav-dropdown relative">
+          <summary class="cursor-pointer list-none hover:text-brand-accent transition-colors">Profile</summary>
+          <div class="nav-dropdown-panel absolute left-0 top-full mt-3 w-56 rounded-xl border border-brand-border bg-white p-2 shadow-lg">
+            <a href="/#about" data-nav-section="about" class="block rounded-lg px-3 py-2 text-xs font-medium text-brand-slate hover:bg-brand-cardmuted hover:text-brand-navy">About</a>
+            <a href="/#expertise" data-nav-section="expertise" class="block rounded-lg px-3 py-2 text-xs font-medium text-brand-slate hover:bg-brand-cardmuted hover:text-brand-navy">Expertise &amp; Skills</a>
+            <a href="/#experience" data-nav-section="experience" class="block rounded-lg px-3 py-2 text-xs font-medium text-brand-slate hover:bg-brand-cardmuted hover:text-brand-navy">Experience &amp; Education</a>
+          </div>
+        </details>
+
+        <details class="nav-dropdown relative">
+          <summary class="cursor-pointer list-none hover:text-brand-accent transition-colors">Work</summary>
+          <div class="nav-dropdown-panel absolute left-0 top-full mt-3 w-64 rounded-xl border border-brand-border bg-white p-2 shadow-lg">
+            <a href="/#case-studies" data-nav-section="case-studies" class="block rounded-lg px-3 py-2 text-xs font-medium text-brand-slate hover:bg-brand-cardmuted hover:text-brand-navy">Selected Work</a>
+            <a href="/case-studies/smart-factory-project-management/" class="block rounded-lg px-3 py-2 text-xs font-medium text-brand-slate hover:bg-brand-cardmuted hover:text-brand-navy">Smart Factory Delivery</a>
+            <a href="/case-studies/digital-training-solutions/" class="block rounded-lg px-3 py-2 text-xs font-medium text-brand-slate hover:bg-brand-cardmuted hover:text-brand-navy">Digital Training (VR/MR)</a>
+            <a href="/case-studies/ai-response-evaluation/" class="block rounded-lg px-3 py-2 text-xs font-medium text-brand-slate hover:bg-brand-cardmuted hover:text-brand-navy">AI Evaluation</a>
+            <a href="/case-studies/manufacturing-quality-analysis/" class="block rounded-lg px-3 py-2 text-xs font-medium text-brand-slate hover:bg-brand-cardmuted hover:text-brand-navy">Quality &amp; Documentation</a>
+          </div>
+        </details>
+
+        <details class="nav-dropdown relative">
+          <summary class="cursor-pointer list-none hover:text-brand-accent transition-colors">Work With Me</summary>
+          <div class="nav-dropdown-panel absolute right-0 top-full mt-3 w-52 rounded-xl border border-brand-border bg-white p-2 shadow-lg">
+            <a href="/pricing/" class="block rounded-lg px-3 py-2 text-xs font-medium text-brand-slate hover:bg-brand-cardmuted hover:text-brand-navy">Payment Model</a>
+            <a href="/#contact" data-nav-section="contact" class="block rounded-lg px-3 py-2 text-xs font-medium text-brand-slate hover:bg-brand-cardmuted hover:text-brand-navy">Contact</a>
+          </div>
+        </details>
+
         <a href="mailto:galihgilberto48@gmail.com" class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-brand-navy text-white text-xs font-semibold tracking-wide uppercase hover:bg-brand-deep transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-accent">
           Get in Touch
         </a>
@@ -90,12 +115,36 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://xineko4.
     </div>
 
     <!-- Mobile Nav Dropdown -->
-    <div id="mobile-menu" class="hidden md:hidden border-b border-brand-border bg-white px-4 pt-3 pb-5 space-y-2 shadow-lg">
-      <a href="/#about" data-nav-section="about" class="block py-2 text-base font-medium text-brand-slate hover:text-brand-accent">About</a>
-      <a href="/#expertise" data-nav-section="expertise" class="block py-2 text-base font-medium text-brand-slate hover:text-brand-accent">Expertise</a>
-      <a href="/#case-studies" data-nav-section="case-studies" class="block py-2 text-base font-medium text-brand-slate hover:text-brand-accent">Selected Work</a>
-      <a href="/#experience" data-nav-section="experience" class="block py-2 text-base font-medium text-brand-slate hover:text-brand-accent">Experience</a>
-      <a href="/#contact" data-nav-section="contact" class="block py-2 text-base font-medium text-brand-accent font-semibold">Contact</a>
+    <div id="mobile-menu" class="hidden md:hidden border-b border-brand-border bg-white px-4 pt-3 pb-5 space-y-1 shadow-lg">
+      <a href="/#hub" class="block py-2 text-base font-medium text-brand-slate hover:text-brand-accent">Hub</a>
+
+      <details class="mobile-nav-group border-b border-brand-border py-1">
+        <summary class="cursor-pointer list-none py-2 text-base font-medium text-brand-slate hover:text-brand-accent">Profile</summary>
+        <div class="pl-4 pb-2 space-y-1">
+          <a href="/#about" data-nav-section="about" class="block py-1.5 text-sm text-brand-slate hover:text-brand-accent">About</a>
+          <a href="/#expertise" data-nav-section="expertise" class="block py-1.5 text-sm text-brand-slate hover:text-brand-accent">Expertise &amp; Skills</a>
+          <a href="/#experience" data-nav-section="experience" class="block py-1.5 text-sm text-brand-slate hover:text-brand-accent">Experience &amp; Education</a>
+        </div>
+      </details>
+
+      <details class="mobile-nav-group border-b border-brand-border py-1">
+        <summary class="cursor-pointer list-none py-2 text-base font-medium text-brand-slate hover:text-brand-accent">Work</summary>
+        <div class="pl-4 pb-2 space-y-1">
+          <a href="/#case-studies" data-nav-section="case-studies" class="block py-1.5 text-sm text-brand-slate hover:text-brand-accent">Selected Work</a>
+          <a href="/case-studies/smart-factory-project-management/" class="block py-1.5 text-sm text-brand-slate hover:text-brand-accent">Smart Factory Delivery</a>
+          <a href="/case-studies/digital-training-solutions/" class="block py-1.5 text-sm text-brand-slate hover:text-brand-accent">Digital Training (VR/MR)</a>
+          <a href="/case-studies/ai-response-evaluation/" class="block py-1.5 text-sm text-brand-slate hover:text-brand-accent">AI Evaluation</a>
+          <a href="/case-studies/manufacturing-quality-analysis/" class="block py-1.5 text-sm text-brand-slate hover:text-brand-accent">Quality &amp; Documentation</a>
+        </div>
+      </details>
+
+      <details class="mobile-nav-group border-b border-brand-border py-1">
+        <summary class="cursor-pointer list-none py-2 text-base font-medium text-brand-slate hover:text-brand-accent">Work With Me</summary>
+        <div class="pl-4 pb-2 space-y-1">
+          <a href="/pricing/" class="block py-1.5 text-sm text-brand-slate hover:text-brand-accent">Payment Model</a>
+          <a href="/#contact" data-nav-section="contact" class="block py-1.5 text-sm text-brand-accent font-semibold">Contact</a>
+        </div>
+      </details>
     </div>
   </header>
 
@@ -109,8 +158,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://xineko4.
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-slate-800">
         <div class="md:col-span-2">
           <div class="flex items-center gap-3 mb-3">
-            <img src="/galih-mark.svg" alt="Galih Giri" class="w-7 h-7 rounded" />
-            <span class="font-bold text-white text-base">Galih Giri</span>
+            <img src="/galih-mark.svg" alt="Gilbert" class="w-7 h-7 rounded" />
+            <span class="font-bold text-white text-base">Gilbert</span>
           </div>
           <p class="text-sm text-slate-300 max-w-md leading-relaxed">
             Smart Factory project coordination, VR/MR training implementation, and project-based AI evaluation. Focused on practical workplace execution and careful delivery.
@@ -123,8 +172,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://xineko4.
           <ul class="space-y-2 text-sm text-slate-300">
             <li><a href="/#about" class="hover:text-white transition-colors">Professional Background</a></li>
             <li><a href="/#expertise" class="hover:text-white transition-colors">Core Capabilities</a></li>
-            <li><a href="/#case-studies" class="hover:text-white transition-colors">Case Studies & Demos</a></li>
-            <li><a href="/#experience" class="hover:text-white transition-colors">Work History & Education</a></li>
+            <li><a href="/#case-studies" class="hover:text-white transition-colors">Case Studies &amp; Demos</a></li>
+            <li><a href="/pricing/" class="hover:text-white transition-colors">Payment Model</a></li>
+            <li><a href="/#experience" class="hover:text-white transition-colors">Work History &amp; Education</a></li>
           </ul>
         </div>
 
@@ -149,7 +199,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://xineko4.
 
       <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
         <div>
-          &copy; {new Date().getFullYear()} Galih Galuh Giri Gilberto. All rights reserved.
+          &copy; {new Date().getFullYear()} Gilbert. All rights reserved.
         </div>
         <div class="text-[11px] text-slate-400">
           Built with Astro & Tailwind. Zero tracking cookies &bull; Static deployment.

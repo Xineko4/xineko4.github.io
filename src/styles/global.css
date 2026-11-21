@@ -59,6 +59,26 @@ nav[aria-label="Main Navigation"] a[data-nav-section][data-active="true"]::after
   transform: scaleX(1);
 }
 
+/* Desktop dropdown navigation */
+.nav-dropdown > summary,
+.mobile-nav-group > summary {
+  list-style: none;
+}
+
+.nav-dropdown > summary::-webkit-details-marker,
+.mobile-nav-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dropdown-panel {
+  display: none;
+  z-index: 60;
+}
+
+.nav-dropdown[open] > .nav-dropdown-panel {
+  display: block;
+}
+
 /* Restrained desktop-only pointer spotlight for case-study cards */
 .case-card-interactive {
   position: relative;

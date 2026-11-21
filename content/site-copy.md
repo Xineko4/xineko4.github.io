@@ -1,17 +1,17 @@
 # Site copy — factual source
 
 ## Identity
-Display name: Galih Giri
-Full name: Galih Galuh Giri Gilberto
+Display name: Gilbert
+Full name: Gilbert
 Location: Indonesia
 Email: galihgilberto48@gmail.com
 LinkedIn: https://www.linkedin.com/in/galihgilberto/
 
 ## Headline
-Smart Factory Project Management | Digital Training Solutions | AI Training & Evaluation
+Digital Training, AI Evaluation & Project Delivery
 
 ## Short profile
-Project management and digital training solutions professional with six years of experience supporting Smart Factory initiatives across multiple departments. Experienced in project planning, coordination, implementation, monitoring and evaluation, stakeholder management, and budget/resource management. Training-solution experience includes VR training, digital work instructions, training content development, training needs analysis, and training effectiveness evaluation. Also has project-based AI task experience.
+I am a project management and digital training professional with six years of experience supporting manufacturing initiatives across multiple departments. My experience covers project planning, coordination, implementation, monitoring and evaluation, stakeholder management, and budget/resource management. My training work includes VR and Mixed Reality (MR) training, digital work instructions, training content development, training needs analysis, and training effectiveness evaluation. I also have project-based AI task experience.
 
 ## About
 My professional background combines manufacturing operations, Smart Factory project coordination, and digital training solutions. Over six years, I have handled projects across departments, supporting work from planning and coordination through implementation, monitoring, and evaluation. My training-solution experience includes VR training, digital work instructions, training content development, training needs analysis, and training effectiveness evaluation.

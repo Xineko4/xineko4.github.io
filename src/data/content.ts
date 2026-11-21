@@ -10,16 +10,16 @@ export interface CaseStudyMeta {
 }
 
 export const profileData = {
-  name: "Galih Galuh Giri Gilberto",
-  displayName: "Galih Giri",
+  name: "Gilbert",
+  displayName: "Gilbert",
   location: "Indonesia",
   email: "galihgilberto48@gmail.com",
   linkedin: "https://www.linkedin.com/in/galihgilberto/",
-  headline: "Smart Factory Project Management | Digital Training Solutions (VR/MR) | AI Training & Evaluation",
+  headline: "Digital Training, AI Evaluation & Project Delivery",
   smartFactoryExperienceYears: 6,
   projectScope: "Multiple projects across departments",
-  heroSummary: "Six years coordinating Smart Factory projects across manufacturing departments, with experience in VR/MR training, digital work instructions, and project-based AI response evaluation.",
-  shortProfile: "Project management and digital training solutions professional with six years of experience supporting Smart Factory initiatives across multiple departments. Experienced in project planning, coordination, implementation, monitoring and evaluation, stakeholder management, and budget/resource management. Training-solution experience includes VR and Mixed Reality (MR) training, digital work instructions, training content development, training needs analysis, and training effectiveness evaluation. Also has project-based AI task experience.",
+  heroSummary: "I bring six years of manufacturing project delivery, hands-on VR/MR training development, and project-based AI evaluation to remote teams that need clear execution and careful review.",
+  shortProfile: "I am a project management and digital training professional with six years of experience supporting manufacturing initiatives across multiple departments. My experience covers project planning, coordination, implementation, monitoring and evaluation, stakeholder management, and budget/resource management. My training work includes VR and Mixed Reality (MR) training, digital work instructions, training content development, training needs analysis, and training effectiveness evaluation. I also have project-based AI task experience.",
   aboutText: [
     "My professional background combines manufacturing operations, Smart Factory project coordination, and digital training solutions. Over six years, I have handled projects across departments, supporting work from planning and coordination through implementation, monitoring, and evaluation. My training-solution experience includes VR and Mixed Reality (MR) training, digital work instructions, training content development, training needs analysis, and training effectiveness evaluation.",
     "I have also completed project-based AI data tasks, including AI response evaluation, response comparison and ranking, factual accuracy checks, prompt writing, response rewriting, data annotation and labeling, instruction-following evaluation, and translation/localization tasks.",

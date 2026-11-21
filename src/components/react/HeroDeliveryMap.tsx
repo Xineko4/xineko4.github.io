@@ -256,7 +256,7 @@ export default function HeroDeliveryMap() {
       {/* Static Summary Line */}
       <div className="mt-3.5 pt-3 border-t border-brand-border">
         <p className="text-[11px] font-mono text-brand-slate leading-relaxed">
-          6 years &bull; Multiple departments &bull; VR/MR &amp; digital training &bull; AI evaluation
+          6 years &bull; Multiple departments &bull; AI evaluation &bull; VR/MR &amp; digital training
         </p>
         <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-[11px] text-brand-muted">
           <span>Batam, Indonesia</span>
